@@ -1,0 +1,166 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+/* table of contents 
+	- header
+	- 
+	*/
+h1 {
+  font-size: calc(18px + 6 * ((100vw - 320px) / 880));
+  font-weight: bold;
+  margin: 20px 0 40px 0;
+}
+
+h2 {
+  font-size: calc(18px + 6 * ((100vw - 320px) / 880));
+  margin: 40px 0 40px 0;
+}
+
+h3 {
+  font-size: calc(8px + 8 * ((100vw - 320px) / 880));
+}
+
+body {
+  height: 100%;
+  font-family: "Comic Sans MS", Arial, sans-serif;
+}
+
+.wrapper {
+  height: 100%;
+  max-width: 1600px;
+  width: auto;
+  margin: 0px auto 0px auto;
+  text-align: center;
+}
+
+.topimg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 10% 0 10% 0;
+}
+
+.steps__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  padding: 25px;
+  margin-top: 20px;
+}
+
+.steps__icons__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 10%;
+  padding: 5px;
+}
+
+.steps__title {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  margin: auto;
+}
+
+.steps__title p {
+  margin-top: 20px;
+  font-size: calc(8px + 4 * ((100vw - 320px) / 880));
+}
+
+footer {
+  font-size: calc(12px + 6 * ((100vw - 320px) / 880));
+}
